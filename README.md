@@ -161,7 +161,8 @@ Having
 count(*)>1
 ```
 <p align="center">
-  <img src= "https://github.com/ChinagromOdo/Top-UK-Youtubers-/blob/f5846ef1bbb63a6876de64f9f60fc2e0ac66a9e2/Assets/Cleaned%20Dataset/Validation%20Results%20SQL.png" alt="Validation Result"width="600">
+ <img src="https://raw.githubusercontent.com/ChinagromOdo/Top-UK-Youtubers-/main/Assets/Cleaned%20Dataset/Validation%20Results%20SQL.png" alt="Validation Result" width="600">
+
 </p>
 
 ## 📈 Interactive Dashboard
