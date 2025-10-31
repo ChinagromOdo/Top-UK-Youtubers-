@@ -11,8 +11,7 @@
 5. [Interactive Dashboard](#interactive-dashboard)
 6. [Tools Used](#tools-used)
 7. [Insights & Recommendations](#insights--recommendations)
-8. [How to Reproduce](#how-to-reproduce)
-9. [Contact](#contact)
+8. [Contact](#contact)
 
 ---
 
@@ -26,6 +25,8 @@ The dataset includes subscriber counts, average views, video engagement metrics,
 The initial dataset was compiled from publicly available YouTube API data.
 
 📂 **[Download Raw Data (CSV)](Assets/Datasets/youtube top channels from kaggle.csv)**
+
+
 
 
 
@@ -120,6 +121,100 @@ with pd.ExcelWriter(Excel_file, engine="openpyxl", mode="w") as writer:
 print("\n✅ Excel file successfully updated with missing IDs and stats!")
 print(f"📁 Saved at: {Excel_file}")
 ```
+[Download enhanced Data from python](Assets/Datasets/youtube top channels from python.csv)
+
+<p align="center">
+  <img src="./Profile%20picture.jpg" alt="Chinagorom Odo" width="200">
+</p>
 
 
+##🧮 New Data (Processed)
+The dataset was cleaned to get Channel Names, Subscribers, views and Videos. When this was completed we now have a ckeaned ready to use Dataset For analysis
+[📂 View Processed Data](Assets/Cleaned Dataset)
+
+##Data Validation
+The data was validated using SQL by checking the Row count(100 channels were to be analysed), Column count (ensuring subscribers, videos, and views count for each channel was inputed) as well as checking for duplicates and data type for each value.
+``` SQL
+select count (*) as record_count 
+from view_uk_youtubers
+
+
+select count(*) as column_count
+from
+	information_schema.columns
+where
+	table_name = 'view_uk_youtubers'
+
+select
+	COLUMN_NAME,
+	DATA_TYPE
+
+from 
+	information_schema.columns
+where
+	table_name = 'view_uk_youtubers'
+
+select
+channel_name,
+count(*) as duplicate_count
+from 
+	view_uk_youtubers
+group by 
+	channel_name
+Having 
+count(*)>1
+```
+<p align="center">
+  <img src="Assets/Cleaned Dataset/Validation Results SQL.png" alt="Validation Result"width="600">
+</p>
+
+## 📈 Interactive Dashboard
+After Cleaninig an interactive Dashboard was Created to Visualise Results
+🔗 **[Open Power BI Dashboard](https://app.powerbi.com/view?r=YOUR_SHARE_LINK)**
+
+Or preview screenshot:
+
+<p align="center">
+  <img src="Assets/Dashboard/Top 10 UK Youtubers 2025 Dashboard.png" alt="Validation Result"width="1000">
+</p>
+
+> The dashboard allows filtering by Channel Name, subscriber COunt and other engagem metrics for deeper insights.
+
+---
+
+## ⚙️ Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| Python (Pandas, Google API) | Extract and clean YouTube data |
+| YouTube Data API v3 | Retrieve channel metrics programmatically |
+| SQL| Data Cleaning and Data Validation|
+| Excel | Quick summaries, validations andn result checking|
+| GitHub Pages | Host project documentation |
+| Power BI | Build interactive visualizations |
+
+---
+
+## 💡 Insights & Marketing Recommendations
+
+### ▶️ Top Channels by Views
+1. **MrBeast UK** – Highest overall reach and brand visibility  
+2. **Sidemen** – Consistent engagement with younger audiences  
+3. **KSI** – Strong crossover into music and entertainment verticals  
+
+### 🔔 Top Channels by Subscribers
+1. **MrBeast UK**  
+2. **Sidemen**  
+3. **Zoella (Reactivated Channel)**  
+
+### 💬 Best Engagement Rate (%)
+- **KSI – 8.4%**  
+- **Sidemen – 8.1%**  
+- **Niko Omilana – 7.9%**
+
+### 🧭 Marketing Recommendations
+- **For mass awareness campaigns:** Partner with MrBeast UK or Sidemen  
+- **For youth-targeted campaigns:** KSI and Niko Omilana  
+- **For female audience campaigns:** Zoella or Saffron Barker  
+- Consider **cross-promotions** with multiple channels to maximize reach and engagement
 
