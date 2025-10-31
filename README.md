@@ -161,7 +161,7 @@ Having
 count(*)>1
 ```
 <p align="center">
-  <img src="Assets/Cleaned Dataset/Validation Results SQL.png" alt="Validation Result"width="600">
+  <img src="Assets/Cleaned%20Dataset/Validation%20Results%20SQL.png" alt="Validation Result"width="600">
 </p>
 
 ## 📈 Interactive Dashboard
