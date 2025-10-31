@@ -123,16 +123,12 @@ print(f"📁 Saved at: {Excel_file}")
 ```
 [Download enhanced Data from python](Assets/Datasets/youtube top channels from python.csv)
 
-<p align="center">
-  <img src="./Profile%20picture.jpg" alt="Chinagorom Odo" width="200">
-</p>
 
-
-##🧮 New Data (Processed)
+## 🧮 New Data (Processed)
 The dataset was cleaned to get Channel Names, Subscribers, views and Videos. When this was completed we now have a ckeaned ready to use Dataset For analysis
 [📂 View Processed Data](Assets/Cleaned Dataset)
 
-##Data Validation
+## Data Validation
 The data was validated using SQL by checking the Row count(100 channels were to be analysed), Column count (ensuring subscribers, videos, and views count for each channel was inputed) as well as checking for duplicates and data type for each value.
 ``` SQL
 select count (*) as record_count 
