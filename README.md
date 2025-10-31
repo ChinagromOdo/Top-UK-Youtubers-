@@ -4,7 +4,7 @@
 ---
 
 ## 📚 Table of Contents
-1. [Overview](#🧩Overview)
+1. [Overview](#overview)
 2. [Raw Data](#raw-data)
 3. [Data Collection (Python Script)](#data-collection-python-script)
 4. [New Data (Processed)](#new-data-processed)
