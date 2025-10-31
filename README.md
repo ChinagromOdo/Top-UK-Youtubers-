@@ -27,9 +27,6 @@ The initial dataset was compiled from publicly available YouTube API data.
 📂 **[Download Raw Data (CSV)](Assets/Datasets/youtube top channels from kaggle.csv)**
 
 
-
-
-
 ---
 
 ## 🐍 Data Collection (Python Script)
@@ -172,8 +169,8 @@ After Cleaninig an interactive Dashboard was Created to Visualise Results
 Or preview screenshot:
 
 <p align="center">
-  <img src="Assets/Dashboard/Top 10 UK Youtubers 2025 Dashboard.png" alt="Validation Result"width="1000">
-</p>
+ <img src="https://raw.githubusercontent.com/ChinagromOdo/Top-UK-Youtubers-/main/Assets/Dashboard/Top%2010%20UK%20Youtubers%202025%20Dashboard.png" alt="Top 10 UK YouTubers Dashboard" width="600">
+ </p>
 
 > The dashboard allows filtering by Channel Name, subscriber COunt and other engagem metrics for deeper insights.
 
