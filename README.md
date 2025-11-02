@@ -36,7 +36,7 @@ from googleapiclient.discovery import build
 import pandas as pd
 
 # --- CONFIG ---
-API_KEY = "I454323245tv477O2KRu6QCJnAM"
+API_KEY = "[your API key]"
 Excel_file = r"C:\Users\USER\Desktop\youtube top channels.xlsx"
 
 # --- Load Excel ---
